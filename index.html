@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101018">
+  <title>CASE ZONE | جرابك على مزاجك</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#"><span class="brand-mark">C</span><span>CASE<span class="accent">ZONE</span><small>جرابك على مزاجك</small></span></a>
+  <nav><a href="#shop">المتجر</a><a href="#custom">صمّم جرابك</a><a href="#how">إزاي تطلب؟</a></nav>
+  <a class="nav-cta" href="#custom">اطلب دلوقتي <span>↗</span></a>
+</header>
+<main>
+<section class="hero">
+  <div class="hero-copy">
+    <div class="eyebrow"><span class="pulse"></span> YOUR PHONE. YOUR STYLE.</div>
+    <h1>خلي موبايلك<br>يحكي <span class="gradient-text">ستايلك.</span></h1>
+    <p>جرابات بتصميمات مختلفة، أو اعمل جرابك الخاص بالتصميم اللي في دماغك. اختار موبايلك وخلّي الباقي علينا.</p>
+    <div class="hero-actions"><a class="btn primary" href="#shop">شوف التصميمات <span>←</span></a><a class="btn ghost" href="#custom">صمّم جرابك بنفسك</a></div>
+    <div class="hero-stats"><div><strong>01</strong><span>اختار موبايلك</span></div><div><strong>02</strong><span>اختار الديزاين</span></div><div><strong>03</strong><span>أكد طلبك</span></div></div>
+  </div>
+  <div class="hero-art">
+    <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+    <div class="phone phone-back"><div class="camera-set"><i></i><i></i><i></i></div><div class="case-art art-purple">VIBE<br><b>YOUR<br>WAY</b><span>✦</span></div></div>
+    <div class="phone phone-front"><div class="camera-set"><i></i><i></i><i></i></div><div class="case-art art-black"><span class="star">✳</span><b>NO<br>RULES.</b><small>CASE ZONE / 026</small></div></div>
+    <div class="floating-tag tag-top">✦ CUSTOM MADE</div><div class="floating-tag tag-bottom">ستايلك.. اختيارك</div>
+  </div>
+</section>
+<section class="ticker"><div>YOUR STYLE • YOUR CASE • YOUR RULES • جرابك على مزاجك • YOUR STYLE • YOUR CASE •</div></section>
+<section class="section" id="shop">
+  <div class="section-head"><div><div class="eyebrow">THE COLLECTION</div><h2>اختار الـ <span class="gradient-text">VIBE</span> بتاعك</h2><p>دي أمثلة للتصميمات — تقدر تطلب تصميم مختلف كمان.</p></div><span class="pill">DESIGNED FOR YOU</span></div>
+  <div class="filters" role="group" aria-label="فلترة المنتجات"><button class="filter active" data-filter="all">الكل</button><button class="filter" data-filter="anime">أنمي</button><button class="filter" data-filter="minimal">مينيمال</button><button class="filter" data-filter="gaming">جيمينج</button><button class="filter" data-filter="cute">كيوت</button></div>
+  <div class="products" id="products"></div>
+</section>
+<section class="custom-section" id="custom">
+  <div class="custom-intro"><div class="eyebrow">MAKE IT YOURS</div><h2>جرابك مش موجود؟<br><span class="gradient-text">صمّمه بنفسك.</span></h2><p>اكتب موديل موبايلك ووصف التصميم اللي عايزه، وسيب بياناتك عشان نتواصل معاك ونأكد الطلب.</p><div class="custom-note"><span>✦</span><div><b>تصميم على ذوقك</b><small>ابعتلنا وصف أو صورة للتصميم على واتساب بعد إرسال الطلب.</small></div></div></div>
+  <form id="orderForm" class="order-card">
+    <div class="form-title"><div><span class="step">01</span><h3>تفاصيل الجراب</h3></div><span class="required-note">* بيانات مطلوبة</span></div>
+    <label>نوع الموبايل والموديل <b>*</b><input name="phoneModel" placeholder="مثال: iPhone 15 Pro Max / Samsung A55" required></label>
+    <div class="form-grid"><label>اختار التصميم <b>*</b><select name="design" id="designSelect" required><option value="">اختار ستايل</option><option>أنمي</option><option>جيمينج</option><option>كيوت</option><option>مينيمال</option><option>اسم أو صورة شخصية</option><option>تصميم من اختياري</option></select></label><label>اللون المفضل<input name="color" placeholder="مثال: أسود / موف"></label></div>
+    <label>وصف التصميم بالتفصيل <b>*</b><textarea name="details" rows="3" placeholder="عايز رسمة إيه؟ اسم؟ ألوان معينة؟" required></textarea></label>
+    <div class="form-title contact-title"><div><span class="step">02</span><h3>بيانات التوصيل</h3></div></div>
+    <div class="form-grid"><label>اسمك <b>*</b><input name="customerName" placeholder="الاسم بالكامل" required></label><label>رقم الموبايل <b>*</b><input name="phone" inputmode="tel" placeholder="01xxxxxxxxx" required></label></div>
+    <label>العنوان بالتفصيل <b>*</b><textarea name="address" rows="2" placeholder="المحافظة، المنطقة، الشارع، رقم العمارة..." required></textarea></label>
+    <label>طريقة التواصل المفضلة<select name="contact"><option>واتساب</option><option>مكالمة هاتفية</option></select></label>
+    <button class="btn primary submit-btn" type="submit">ابعت الطلب على واتساب <span>↙</span></button>
+    <p class="privacy-note">بالضغط على الزر، هيفتح واتساب برسالة فيها تفاصيل طلبك لمراجعتها قبل الإرسال.</p>
+    <div id="formMessage" class="form-message" role="status"></div>
+  </form>
+</section>
+<section class="how section" id="how"><div class="section-head"><div><div class="eyebrow">EASY AS 1, 2, 3</div><h2>اطلب في <span class="gradient-text">3 خطوات</span></h2></div></div><div class="steps"><article><span>01</span><h3>اختار أو صمّم</h3><p>اختار تصميم من المتجر أو اكتب فكرتك في نموذج الطلب.</p></article><article><span>02</span><h3>ابعت بياناتك</h3><p>اكتب موديل الموبايل وبيانات التوصيل بشكل صحيح.</p></article><article><span>03</span><h3>أكد معانا</h3><p>الطلب هيوصلنا على واتساب وهنكلمك لتأكيد التفاصيل والسعر.</p></article></div></section>
+</main>
+<footer><a class="brand" href="#"><span class="brand-mark">C</span><span>CASE<span class="accent">ZONE</span><small>جرابك على مزاجك</small></span></a><p>ستايلك مختلف؟ جرابك لازم يكون مختلف.</p><a href="#custom">اطلب جرابك ←</a><small class="footer-copy">© <span id="year"></span> CASE ZONE — نموذج متجر قابل للتخصيص</small></footer>
+<script src="products.js"></script><script src="config.js"></script><script src="script.js"></script>
+</body></html>
